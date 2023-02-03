@@ -25,10 +25,6 @@ export class SmsService {
 
   constructor() {
     /** create sms adapter from config */
-    console.log('credential', this.provider,
-    this.apiKey,
-    this.apiSecret,
-    this.from);
     this.adapter = createSMSAdapter(
       this.provider,
       this.apiKey,
