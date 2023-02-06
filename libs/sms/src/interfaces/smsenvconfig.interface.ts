@@ -1,5 +1,7 @@
+import { Provider } from "../enum/provider.enum";
+
 export interface SmsEnvConfig {
-  provider: string;
+  provider: Provider;
   apiKey: string;
   apiSecret: string;
   from: string;
