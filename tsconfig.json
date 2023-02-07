@@ -6,16 +6,19 @@
     "lib": ["es2017", "es7", "es6"],
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./libs",
     "strict": true,
     "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noLib": false,
+    "importHelpers": true,
     "strictNullChecks": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": true
   },
   "include": ["libs/**/*"],
-  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+  "exclude": ["node_modules", "**/*spec.ts"]
 }

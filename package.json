@@ -7,8 +7,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "tsc": "tsc",
-    "build": "rimraf dist && tsc",
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.json",
     "prepublish": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
@@ -74,10 +74,6 @@
     "roots": [
       "<rootDir>/src/",
       "<rootDir>/libs/"
-    ],
-    "moduleNameMapper": {
-      "^@ait/nestjs-notification/email(|/.*)$": "<rootDir>/libs/email/src/$1",
-      "^@ait/nestjs-notification/sms(|/.*)$": "<rootDir>/libs/sms/src/$1"
-    }
+    ]
   }
 }
