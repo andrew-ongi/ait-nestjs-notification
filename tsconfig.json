@@ -1,24 +1,21 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "target": "es2017",
     "module": "commonjs",
-    "lib": ["es2017", "es7", "es6"],
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "declarationMap": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "importHelpers": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
     "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./libs",
-    "strict": true,
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
-    "noLib": false,
-    "importHelpers": true,
-    "strictNullChecks": false,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true
+    "lib": ["es7", "DOM"]
   },
   "include": ["libs/**/*"],
-  "exclude": ["node_modules", "**/*spec.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
